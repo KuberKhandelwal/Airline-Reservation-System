@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="search-css.css">
+<title>Next Care Airline</title>
+<style type="text/css">
+form { 
+        border: 3px solid #f1f1f1; 
+        width : 25%;
+        heigth: 25%;
+        margin : 0 auto;
+    } 
+    /*assign full width inputs*/ 
+      
+    input[type=text],
+    input[type=password] { 
+        width: 90%; 
+        padding: 12px 20px; 
+        margin: 0 15px; 
+        display: inline-block; 
+        border: 1px solid #ccc; 
+        box-sizing: border-box; 
+    } 
+    input[type=radio]
+    { 
+        width: 10%; 
+        padding: 12px 20px; 
+        margin: 0 15px; 
+        display: inline; 
+        border: 1px solid #ccc; 
+        box-sizing: border-box; 
+    } 
+    /*set a style for the buttons*/ 
+      
+    button { 
+        background-color: #FF0000; 
+        color: white; 
+        padding: 14px 20px; 
+        margin: 8px 0; 
+        border: none; 
+        cursor: pointer; 
+        width: 100%; 
+    } 
+    /* set a hover effect for the button*/ 
+      
+    button:hover { 
+        opacity: 0.8; 
+    } 
+    
+      
+    .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px; 
+        background-color: #f44336; 
+    } 
+  
+    .imgcontainer { 
+        text-align: center; 
+        margin: 24px 0 12px 0; 
+    } 
+   
+      
+    img.avatar { 
+        width: 40%; 
+        border-radius: 50%; 
+    } 
+  
+      
+    .container { 
+        padding: 16px; 
+    } 
+  
+      
+    span.psw { 
+        float: right; 
+        padding-top: 16px; 
+    } 
+   
+    .name{
+               text-align = center;
+    } 
+  
+
+
+</style>
+</head>
+<body>
+<div class="header">
+  <a href="home.jsp" class="logo"><img alt="" width="100px" src="logo.png">Next Care Airline</a>
+  <div class="header-right">
+    <a href="search.html">Search</a>
+    <a href="Book.html">Book</a>
+    <a href="pay.html">Payment</a>
+  </div>
+</div>
+
+                 <div class = "cssmarquee">
+<marquee class="cssmarquee" width = "96%" height = "70%"  scrollamount= "50" scrolldelay="10"direction = "right"  bgcolor = "transparent"  hspace = "20"  vspace = "50" scrollamount = "200" style="color:red;"><strong>Next Care Airline</strong></marquee>
+                 </div>
+ <form action="Book.jsp">
+  
+  <label for="fcode" style="color:red;" >Flight Code:</label><br>
+  <input type="text" id="fcode" name="fcode"><br>
+  <label for="fpassport" style="color:red;">Passport Number:</label><br>
+  <input type="text" id="fpassport" name="fpassport" ><br>
+   <label for="fname" style="color:red;">First Name:</label><br>
+  <input type="text" id="fname" name="fname" ><br>
+   <label for="lname" style="color:red;">Last Name:</label><br>
+  <input type="text" id="lname" name="lname" >
+   <input type="radio" id="male" name="gender" value="male">
+  <label for="male" style="color:red;">Male</label><br>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female" style="color:red;">Female</label><br>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other" style="color:red;" >Other</label>
+  <button type="submit" >book</button> 
+ 
+ 
+ </form>
+</body>
+</html>
